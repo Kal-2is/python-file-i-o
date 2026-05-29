@@ -1,4 +1,4 @@
-# write a text to existing file
+## write a text to existing file
 - to write to an existing file, you must add a parameter to the open() function:
 - "a" - Append : will append to the end of the file 
 - "w" - Write : will overwrite any existing content
@@ -31,4 +31,16 @@ with open("demofile.txt") as f:
 
 ## to create a new file 
 
+```
 f=open ("myfile.txt","x")
+```
+
+## Delete a File
+
+To delete a file, you must import the OS module, and run its **os.remove()** function:
+    ```
+    import os
+    os.remove("demofile.txt") 
+    ```
+
+    
